@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JavaScript Calculator</title>
+</head>
+<body>
+    <h1>JavaScript Calculator</h1>
+    <div class="container-fluid">
+        <input type="text" name="display" readonly placeholder="0" data-entry>
+        <div class="row-one">
+            <button type="button" id="delete-button">DEL</button>
+            <button type="button">CE</button>
+            <button type="button">%</button>
+            <button type="button" onclick="display('÷')" id="division" data-operator>÷</button>
+        </div>
+        <div class="row-two">
+            <button type="button" onclick="display('7')">7</button>
+            <button type="button" onclick="display('8')">8</button>
+            <button type="button" onclick="display('9')">9</button>
+            <button type="button" onclick="display('-')" id="subtract" data-operator>-</button>
+        </div>
+        <div class="row-three">
+            <button type="button" onclick="display('4')">4</button>
+            <button type="button" onclick="display('5')">5</button>
+            <button type="button" onclick="display('6')">6</button>
+            <button type="button" onclick="display('×')" id="multiplication" data-operator>×</button>
+        </div>
+        <div class="row-four">
+            <button type="button" onclick="display('1')">1</button>
+            <button type="button" onclick="display('2')">2</button>
+            <button type="button" onclick="display('3')">3</button>
+            <button type="button" onclick="display('+')" id="add" data-operator>+</button>
+        </div>
+        <div class="row-five">
+            <button type="button" onclick="display('0')">0</button>
+            <button type="button" onclick="display('.')">.</button>
+            <button type="button" id="equal" onclick="answer()" >=</button>
+        </div>
+        <p class="lead">E.C.W</p>
+    </div>
+
+    <script src="./script/code.js"></script>
+</body>
+</html>
