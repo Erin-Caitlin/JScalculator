@@ -4,9 +4,15 @@ function display(value) {
     dataEntry.value += value
 }
 
-
-function calculate() {
-    let sum = [data-entry]
-    [data-entry] = eval(sum)
+function evaluateSum() {
+    let sum = dataEntry.value
+    dataEntry.value = eval(sum)
 }
+
+function clearSum() {
+    dataEntry.value = "" 
+}
+
+
+
 
