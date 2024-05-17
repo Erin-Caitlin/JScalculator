@@ -1,0 +1,55 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 10px;
+}
+
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.container-fluid {
+    display: grid;
+    width: fit-content;
+    background-color: plum;
+    margin-inline: auto;
+    border-radius: 1rem;
+}
+
+input {
+    margin-bottom: 5%;
+    text-align: right;
+    border-color: palevioletred;
+    border-radius: 0.5rem;
+}
+
+button {
+    width: 50px;
+    background-color: white;
+    border-color: palevioletred;
+    border-radius: 10%;
+}
+
+#equal {
+    background-color: palevioletred;
+    width: 100px;
+}
+
+/* #delete-button {
+    align-items: center;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    width: 20%;
+} */
+
+button[data-operator] {
+    background-color: palevioletred;
+}
